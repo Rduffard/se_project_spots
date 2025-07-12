@@ -41,6 +41,14 @@
   border: none;
   background-color: transparent;
   padding: 0;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 100%;
+  color: #212121;
+}
+
+.profile__add-btn:hover {
+  opacity: 80%;
 }
 
 .profile__name {
@@ -54,6 +62,7 @@
   -webkit-line-clamp: 3;
   -webkit-box-orient: vertical;
   max-width: 420px;
+  color: #212121;
 }
 
 .profile__description {
@@ -68,6 +77,7 @@
   font-size: 16px;
   line-height: 100%;
   color: #212121;
+  opacity: 70%;
 }
 
 @media screen and (max-width: 627px) {
@@ -88,7 +98,6 @@
   .profile__name {
     font-size: 20px;
     margin-bottom: 6px;
-    color: #212121;
   }
 
   .profile__column {
@@ -102,10 +111,9 @@
   .profile__add-btn {
     margin-top: 20px;
     width: 100%;
-    line-height: 100%;
   }
 
   .profile__edit-btn {
-    display: block;
+    justify-content: center;
   }
 }
