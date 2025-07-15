@@ -20,6 +20,7 @@
   font-weight: 500;
   font-size: 16px;
   line-height: 100%;
+  cursor: pointer;
 }
 
 .profile__add-btn:hover {
@@ -50,6 +51,7 @@
   line-height: 100%;
   color: #212121;
   opacity: 70%;
+  cursor: pointer;
 }
 
 .profile__edit-btn:hover {
