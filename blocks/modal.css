@@ -1,0 +1,130 @@
+.modal {
+  visibility: hidden;
+  position: fixed;
+  background-color: #00000080;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 10px;
+}
+
+.modal_is-opened {
+  visibility: visible;
+}
+
+.modal__container {
+  max-width: 730px;
+  width: 100%;
+  border-radius: 8px;
+  background-color: #ffffff;
+  justify-content: center;
+  padding: 32px 50px;
+  position: relative;
+}
+
+.modal__close-btn {
+  position: absolute;
+  top: 32px;
+  right: 50px;
+  width: 40px;
+  height: 40px;
+  background-image: url(../images/closebtn.svg.svg);
+  opacity: 40%;
+  cursor: pointer;
+  border: none;
+  background-color: transparent;
+  padding: 0;
+}
+
+.modal__close-btn:hover {
+  opacity: 100%;
+}
+
+.modal__title {
+  margin: 0 0 32px;
+  font-family: Poppins, Arial, Helvetica, sans-serif;
+  font-weight: 500;
+  font-style: Medium;
+  font-size: 32px;
+  line-height: 100%;
+  letter-spacing: 0%;
+  height: 40px;
+}
+
+.modal__form {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+
+.modal__input {
+  display: block;
+  margin: 8px 0 0;
+  width: 100%;
+  font-family: Poppins, Arial, Helvetica, sans-serif;
+  font-weight: 500;
+  font-style: Medium;
+  font-size: 20px;
+  line-height: 100%;
+  letter-spacing: 0%;
+  height: 52px;
+  border-radius: 8px;
+  border-width: 1px;
+  padding: 0 0 0 12px;
+  border: 1px solid #21212166;
+}
+
+.modal__label {
+  margin: 0 0 32px;
+  color: #212121b2;
+  font-family: Poppins, Arial, Helvetica, sans-serif;
+  font-weight: 500;
+  font-style: Medium;
+  font-size: 16px;
+  letter-spacing: 0%;
+}
+
+.modal__input::placeholder {
+  color: #2121214d;
+}
+
+.modal__submit-btn {
+  width: 156px;
+  height: 52px;
+  background-color: #212121;
+  border-radius: 8px;
+  border: none;
+  font-family: Poppins, Arial, Helvetica, sans-serif;
+  font-weight: 500;
+  font-style: Medium;
+  font-size: 16px;
+  line-height: 100%;
+  letter-spacing: 0%;
+  color: #fcf5e5;
+  cursor: pointer;
+  margin: 0;
+}
+
+.modal__submit-btn:hover {
+  background-color: #212121cc;
+}
+
+@media screen and (max-width: 627px) {
+  .modal__title {
+    font-size: 20px;
+  }
+
+  .modal__input {
+    height: 48px;
+    font-size: 16px;
+  }
+
+  .modal__submit-btn {
+    width: 100%;
+    max-width: none;
+  }
+}
