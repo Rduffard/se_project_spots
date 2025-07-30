@@ -12,6 +12,7 @@
   justify-content: center;
   align-items: center;
   padding: 10px;
+  box-sizing: border-box;
 }
 
 .modal_is-opened {
@@ -28,6 +29,7 @@
   justify-content: center;
   padding: 32px 50px;
   position: relative;
+  box-sizing: border-box;
 }
 
 .modal__close-btn {
@@ -80,6 +82,7 @@
   border-width: 1px;
   padding: 0 0 0 12px;
   border: 1px solid #21212166;
+  box-sizing: border-box;
 }
 
 .modal__label {
@@ -130,5 +133,14 @@
   .modal__submit-btn {
     width: 100%;
     max-width: none;
+  }
+
+  .modal__container {
+    padding: 22px 12px 12px;
+  }
+
+  .modal__close-btn {
+    top: 12px;
+    right: 12px;
   }
 }
