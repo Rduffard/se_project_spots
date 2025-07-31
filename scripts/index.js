@@ -83,5 +83,4 @@ addPostFormEl.addEventListener("submit", handleEditNewPostSubmit);
 intitialCards.forEach(function (item) {
   console.log(item.name);
   console.log(item.link);
-  sss;
 });
