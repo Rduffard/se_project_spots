@@ -42,7 +42,7 @@
   right: 50px;
   width: 40px;
   height: 40px;
-  background-image: url(../images/closebtn.svg.svg);
+  background-image: url(../images/closebtn.svg);
   opacity: 40%;
   cursor: pointer;
   border: none;
@@ -57,7 +57,7 @@
 .modal__close-btn_type_preview {
   top: 0;
   right: -52.5px;
-  background-image: url(../images/Close\ Icon.svg);
+  background-image: url(../images/close-icon.svg);
   opacity: 100%;
 }
 
@@ -157,6 +157,8 @@
   font-style: Medium;
   font-size: 20px;
   line-height: 120%;
+  position: absolute;
+  padding: 4px 8px;
 }
 
 @media screen and (max-width: 627px) {
