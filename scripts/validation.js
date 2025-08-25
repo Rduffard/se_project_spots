@@ -10,13 +10,13 @@ const settings = {
 const showInputError = (formElement, inputElement, errorMessage, config) => {
   const errorElement = formElement.querySelector(`#${inputElement.id}-error`);
   errorElement.textContent = errorMessage;
-  inputElement.classList.add(config.inputErrorClass);
+  errorElement.classList.add(config.inputErrorClass);
 };
 
 const hideInputError = (formElement, inputElement, config) => {
   const errorElement = formElement.querySelector(`#${inputElement.id}-error`);
   errorElement.textContent = "";
-  inputElement.classList.remove(config.inputErrorClass);
+  errorElement.classList.remove(config.inputErrorClass);
 };
 
 const checkInputValidity = (formElement, inputElement) => {
@@ -40,7 +40,7 @@ const hasInvalidInput = (inputList) => {
 
 const toggleButtonState = (inputList, submitButton, config) => {
   if (hasInvalidInput(inputList)) {
-    disableSubmitButton(submitButton, settings);
+    disableSubmitButton(submitButton, config);
   } else {
     submitButton.classList.remove(config.inactiveButtonClass);
     submitButton.disabled = false;

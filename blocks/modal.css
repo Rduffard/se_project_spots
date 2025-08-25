@@ -43,7 +43,7 @@
   width: 40px;
   height: 40px;
   background-image: url(../images/closebtn.svg);
-  opacity: 40%;
+  opacity: 0.4;
   cursor: pointer;
   border: none;
   background-color: transparent;
@@ -51,18 +51,18 @@
 }
 
 .modal__close-btn:hover {
-  opacity: 100%;
+  opacity: 1;
 }
 
 .modal__close-btn_type_preview {
   top: 0;
   right: -52.5px;
   background-image: url(../images/close-icon.svg);
-  opacity: 100%;
+  opacity: 1;
 }
 
 .modal__close-btn_type_preview:hover {
-  opacity: 40%;
+  opacity: 0.4;
 }
 
 .modal__title {

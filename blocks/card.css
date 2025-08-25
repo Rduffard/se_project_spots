@@ -42,21 +42,21 @@
   background-position: center;
   background-repeat: no-repeat;
   border: none;
-  opacity: 40%;
+  opacity: 0.4;
   cursor: pointer;
 }
 
 .card__like-btn:hover {
-  opacity: 100%;
+  opacity: 1;
 }
 
 .card__like-btn_liked {
   background-image: url(../images/like-button-red.svg);
-  opacity: 100%;
+  opacity: 1;
 }
 
 .card__like-btn_liked:hover {
-  opacity: 40%;
+  opacity: 0.4;
 }
 
 .card__delete-btn {
