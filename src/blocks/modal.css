@@ -179,6 +179,53 @@
   padding: 4px 8px;
 }
 
+.modal__form_delete {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+
+  gap: 20px;
+}
+
+.modal__delete-confirm {
+  background-color: #ff6565;
+  border-radius: 8px;
+  border: none;
+  font-family: Poppins, Arial, Helvetica, sans-serif;
+  font-weight: 500;
+  font-style: Medium;
+  font-size: 16px;
+  line-height: 100%;
+  letter-spacing: 0%;
+  color: #fcf5e5;
+  cursor: pointer;
+}
+
+.modal__delete-confirm:hover {
+  background-color: #ff3333;
+}
+
+.modal__delete-cancel {
+  background-color: #fff;
+  border-radius: 8px;
+  border: 1px solid #212121;
+  font-family: Poppins, Arial, Helvetica, sans-serif;
+  font-weight: 500;
+  font-style: Medium;
+  font-size: 16px;
+  line-height: 100%;
+  letter-spacing: 0%;
+  color: #fcf5e5;
+  cursor: pointer;
+  color: #212121;
+}
+
+.modal__delete-cancel:hover {
+  background-color: #212121;
+  color: #fff;
+}
+
 @media screen and (max-width: 627px) {
   .modal__title {
     font-size: 20px;
