@@ -81,7 +81,7 @@ const cardTemplate = document
   .content.querySelector(".card");
 const cardsList = document.querySelector(".cards__list");
 
-function handleImageClick() {
+function handleImageClick(data) {
   previewImageEl.src = data.link;
   previewImageEl.alt = data.name;
   previewModalCaptionEl.textContent = data.name;

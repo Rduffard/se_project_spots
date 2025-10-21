@@ -143,10 +143,20 @@
 
   .profile__avatar-btn {
     visibility: visible;
+    height: 23px;
+    width: 23px;
+    top: 52px;
+    left: 52px;
   }
 
   .profile__avatar-btn::after {
     content: "";
+  }
+
+  .profile__avatar-btn-icon {
+    position: absolute;
+    top: 3px;
+    left: 3px;
   }
 
   .profile__avatar {

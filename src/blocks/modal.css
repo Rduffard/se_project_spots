@@ -184,7 +184,6 @@
   flex-direction: row;
   align-items: center;
   justify-content: center;
-
   gap: 20px;
 }
 
@@ -257,5 +256,22 @@
 
   .modal__image {
     max-width: unset;
+  }
+
+  .modal__form_delete {
+    flex-direction: column;
+    gap: 20px;
+    size: 20px;
+    line-height: 120%;
+  }
+
+  .modal__delete-cancel {
+    width: 156px;
+    height: 52px;
+  }
+
+  .modal__delete-confirm {
+    width: 156px;
+    height: 52px;
   }
 }
