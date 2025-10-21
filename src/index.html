@@ -12,15 +12,29 @@
   <body>
     <div class="page">
       <header class="header">
-        <img src="./images/logo.svg" alt="Spot Logo" class="header__logo" />
+        <img
+          src="<%=require('./images/logo.svg')%>"
+          alt="Spot Logo"
+          class="header__logo"
+        />
       </header>
       <main class="content">
         <section class="profile page__section">
-          <img
-            src="<%=require('./images/avatar.jpg')%>"
-            alt="Bessie Avatar"
-            class="profile__avatar"
-          />
+          <div class="profile__avatar-containter">
+            <button class="profile__avatar-btn">
+              <img
+                class="profile__avatar-btn-icon"
+                src="<%=require('./images/penic-icon-light.svg')%>"
+                alt="Pencil Icon"
+                id="avatar-edit-button"
+              />
+            </button>
+            <img
+              src="<%=require('./images/avatar.jpg')%>"
+              alt="Bessie Avatar"
+              class="profile__avatar"
+            />
+          </div>
           <div class="profile__column">
             <h1 class="profile__name">Bessie Coleman</h1>
             <p class="profile__description">Civil Aviator</p>
@@ -32,7 +46,10 @@
             </button>
           </div>
           <button type="button" class="profile__add-btn">
-            <img src="./images/plus-icon.svg" alt="Plus Icon" />New Post
+            <img
+              src="<%=require('./images/plus-icon.svg')%>"
+              alt="Plus Icon"
+            />New Post
           </button>
         </section>
         <section class="cards page__section">
@@ -135,6 +152,49 @@
           <img src="#" alt="" class="modal__image" />
           <p class="modal__caption"></p>
         </div>
+      </div>
+    </div>
+
+    <div class="modal" id="avatar-modal">
+      <div class="modal__container">
+        <button type="button" class="modal__close-btn"></button>
+        <h2 class="modal__title">Select Profile Avatar</h2>
+        <form class="modal__form" novalidate id="edit-avatar-form">
+          <label for="avatar-link-input" class="modal__label">
+            Profile Picture
+            <input
+              id="avatar-link-input"
+              type="url"
+              name="avatar"
+              class="modal__input"
+              placeholder="Paste the link to an image"
+              required
+            />
+            <span id="avatar-link-input-error" class="modal__error"></span>
+          </label>
+          <button type="submit" class="modal__submit-btn">Save</button>
+        </form>
+      </div>
+    </div>
+
+    <div class="modal" id="delete-modal">
+      <div class="modal__container">
+        <button type="button" class="modal__close-btn"></button>
+        <h2 class="modal__title">
+          Are you sure you want to delete this image?
+        </h2>
+        <form
+          class="modal__form modal__form_delete"
+          novalidates
+          id="delete-form"
+        >
+          <button type="submit" class="modal__submit-btn modal__delete-confirm">
+            Delete
+          </button>
+          <button type="button" class="modal__submit-btn modal__delete-cancel">
+            Cancel
+          </button>
+        </form>
       </div>
     </div>
   </body>
